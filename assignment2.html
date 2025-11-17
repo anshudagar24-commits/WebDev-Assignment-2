@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Pricing Cards</title>
+<style>
+:root{
+  --card-bg:#fff;
+  --muted:#8b8b8b;
+  --green:#2e8b2e;
+  --gold:#d69b2f;
+  --blue:#2b2be6;
+  --shadow:0 12px 30px rgba(20,20,30,0.06),0 6px 18px rgba(20,20,30,0.04);
+}
+
+body{
+  margin:0;
+  font-family:"Rubik",sans-serif;
+  background:#fff;
+  color:#111;
+  text-align:center;
+}
+
+.wrap{
+  max-width:1100px;
+  margin:0 auto;
+  padding:60px 20px;
+}
+
+.title{
+  font-family:"Merriweather",serif;
+  font-size:40px;
+  margin:0 0 10px;
+}
+
+.subtitle{
+  max-width:650px;
+  margin:0 auto 40px;
+  font-size:14px;
+  color:var(--muted);
+  font-style:italic;
+  line-height:1.6;
+}
+
+.plans{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:30px;
+}
+
+.plan{
+  background:var(--card-bg);
+  border-radius:18px;
+  padding:26px;
+  box-shadow:var(--shadow);
+  display:flex;
+  flex-direction:column;
+  min-height:350px;
+}
+
+.meta{
+  font-family:"Merriweather",serif;
+  font-weight:700;
+  margin-bottom:14px;
+}
+
+.price{
+  font-family:"Merriweather",serif;
+  font-size:26px;
+  font-weight:700;
+  margin:0 0 4px;
+}
+
+.price.free{color:var(--green);}
+.price.mid{color:var(--gold);}
+.price.top{color:var(--blue);}
+
+.per{
+  font-size:12px;
+  color:var(--muted);
+  margin-bottom:16px;
+}
+
+.desc{
+  font-size:14px;
+  line-height:1.7;
+  max-width:88%;
+  margin:0 auto 26px;
+}
+
+.cta{
+  display:inline-block;
+  padding:12px 28px;
+  border-radius:10px;
+  border:2px solid rgba(43,43,230,0.14);
+  color:var(--blue);
+  text-decoration:none;
+  font-weight:600;
+  font-size:15px;
+  margin-top:80px;
+}
+
+@media (max-width:900px){
+  .plans{grid-template-columns:repeat(2,1fr);}
+  .title{font-size:32px;}
+}
+
+@media (max-width:600px){
+  .plans{grid-template-columns:1fr;}
+  .title{font-size:26px;}
+}
+</style>
+</head>
+
+<body>
+
+<div class="wrap">
+  <h1 class="title">Choose a plan that right for your business</h1>
+  <p class="subtitle">We collect reviews from our users so you can get an honest opinion of what an experience with our website are really like!</p>
+
+  <div class="plans">
+
+    <div class="plan">
+      <div>
+        <div class="meta">Starter Plan</div>
+        <div class="price free">Free</div>
+        <div class="per">Per month</div>
+        <p class="desc">We collect reviews from our users so you can get an honest opinion of what an experience with our website.</p>
+      </div>
+      <a href="#" class="cta">Start Now</a>
+    </div>
+
+    <div class="plan">
+      <div>
+        <div class="meta">Starter Plan</div>
+        <div class="price mid">$39.00</div>
+        <div class="per">Per month</div>
+        <p class="desc">We collect reviews from our users so you can get an honest opinion of what an experience with our website.</p>
+      </div>
+      <a href="#" class="cta">Start Now</a>
+    </div>
+
+    <div class="plan">
+      <div>
+        <div class="meta">Starter Plan</div>
+        <div class="price top">$59.00</div>
+        <div class="per">Per month</div>
+        <p class="desc">We collect reviews from our users so you can get an honest opinion of what an experience with our website.</p>
+      </div>
+      <a href="#" class="cta">Start Now</a>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
